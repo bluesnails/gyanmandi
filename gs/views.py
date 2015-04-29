@@ -14,4 +14,7 @@ def about(request):
 def login_page(request):
 	return render(request, 'Registration/login.html')
 
+def aspirant_login(request):
+	if request.method=='POST':
+		username = request.POST['username']
 

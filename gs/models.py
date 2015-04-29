@@ -25,14 +25,13 @@ class Question(models.Model):
 	qtype = models.CharField(max_length=1)
 	flag = models.CharField(max_length=16)
 	tags = TaggableManager()
-	quiz = models.ForeignKey('Quiz')
 
 	def __unicode__(self):
 		return u'%s' % (self.text)
 
 class Choice(models.Model):
 	
-	text = models.CharField(max_length=64, blank=False)
+	text = models.CharField(max_length=96, blank=False)
 	ques = models.ForeignKey('Question')
 	tags = TaggableManager()
 
@@ -48,6 +47,17 @@ class Answer(models.Model):
 
 	def __unicode__(self):
 		return u'%s' % (self.text)
+
+
+class BlogPost(models.Model):
+
+	title = models.CharField(max_length=64, blank=False)
+	text = models.TextField()
+	tags = TaggableManager()
+
+	def __unicode__(self):
+		return u'%s' % (self.title)
+
 
 class Author(models.Model):
 

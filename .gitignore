@@ -1,8 +1,6 @@
 env
 *.DS_Store
 *.pyc
-settings.py
 *.json
 *~
 media/temp
-local_settings.py
