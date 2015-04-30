@@ -63,6 +63,5 @@ class QuestionForm(forms.Form):
 	ques_ans = forms.ChoiceField(widget=forms.RadioSelect, choices=ANS_CHOICE)
 
 	ques_sol = forms.CharField(widget=forms.Textarea(attrs={'cols': 40, 'rows': 14, 'placeholder':'Optional: solution'}))
-	ques_dscore = forms.IntegerField(max_length=1, 
-				widget=forms.TextInput(attrs={'placeholder':'1-10'}))
+	ques_dscore = forms.IntegerField(widget=forms.TextInput(attrs={'placeholder':'1-10'}))
 

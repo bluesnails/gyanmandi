@@ -4,3 +4,4 @@ env
 *.json
 *~
 media/temp
+settings.py

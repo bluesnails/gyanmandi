@@ -1,10 +1,22 @@
 {% extends "base.html" %}
 
+{% block title %}About{% endblock %}
+
+{% block extrahead %}
+	<style type="text/css" >
+		.quote {
+			font-size: 20px;
+			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		}
+	</style>
+{% endblock %}
+
+
 {% block content %}
 
-<p>
+<p class="quote">
 
-Sun Tzu had said, "If you know your enemies and know yourself, you will not be imperiled in a hundred battles; if you do not know your enemies but do know yourself, you will win one and lose one; if you do not know your enemies nor yourself, you will be imperiled in every single battle." 
+"If you know your enemies and know yourself, you will not be imperiled in a hundred battles; if you do not know your enemies but do know yourself, you will win one and lose one; if you do not know your enemies nor yourself, you will be imperiled in every single battle." ~~ Sun Tzu, in Art of War
 </p>
 
 <p>Prepare for GS like never before. 
